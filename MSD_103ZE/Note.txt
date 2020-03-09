@@ -1,0 +1,10 @@
+this sample code tested on Redbull F103ZET Board.
+in this example write  some char to stm32.txt file.
+
+Note: Maximum SDIO input CLK Is 72mhz and maximum acceptable input clk
+is 24mhz, thus for working properly, need to set clkdiv=1 to change
+clk to 24mhz:
+
+in_clk=72mhz
+
+SDIOCLK=in_clk/(clkdiv+2)
